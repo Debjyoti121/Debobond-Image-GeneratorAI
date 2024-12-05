@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debobond Image Generator </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Image Generator</h1>
+    <form id="imageForm">
+      <label for="prompt">Enter your prompt:</label>
+      <input type="text" id="prompt" name="prompt" placeholder="Describe your image..." required>
+      <button type="submit" id="generateButton">Generate</button>
+    </form>
+    <div id="loading" style="display: none;">Generating... Please wait.</div>
+    <div id="result" style="display: none;">
+      <h2>Generated Image:</h2>
+      <img id="generatedImage" alt="Your generated image will appear here" />
+      <button id="downloadButton" style="display: none;">Download</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
