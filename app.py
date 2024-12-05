@@ -13,7 +13,9 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 token = os.getenv("HF_API_KEY")
 client = InferenceClient("stabilityai/stable-diffusion-3.5-large-turbo", token=token)
-
+@app.route("/",methods=["HEAD"])
+def uptimerobot():
+    return{} 
 @app.route("/generate", methods=["POST"])
 def generate_image():
     data = request.json
