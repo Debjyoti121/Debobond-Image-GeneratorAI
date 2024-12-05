@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Debobond Image Generator </title>
-  <link rel="stylesheet" href="styles.css">
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
   <div class="container">
@@ -12,15 +12,15 @@
     <form id="imageForm">
       <label for="prompt">Enter your prompt:</label>
       <input type="text" id="prompt" name="prompt" placeholder="Describe your image..." required>
-      <button type="submit" id="generateButton">Generate</button>
+      <button id="generateButton" type="submit">Generate</button>
     </form>
-    <div id="loading" style="display: none;">Generating... Please wait.</div>
+    <div id="loading" style="display: none;">Generating image, please wait...</div>
     <div id="result" style="display: none;">
       <h2>Generated Image:</h2>
-      <img id="generatedImage" alt="Your generated image will appear here" />
-      <button id="downloadButton" style="display: none;">Download</button>
+      <img id="generatedImage" alt="Your generated image will appear here">
+      <a id="downloadButton" style="display: none;">Download Image</a>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="/static/script.js"></script>
 </body>
 </html>
