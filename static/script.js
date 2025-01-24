@@ -22,7 +22,7 @@ document.getElementById("imageForm").addEventListener("submit", async (e) => {
 
   try {
     // Send a POST request to the backend
-    const response = await fetch("https://debobond-image-generatorai-1.onrender.com/generate", {
+    const response = await fetch("https://debobond-image-generatorai-pyta.onrender.com/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
